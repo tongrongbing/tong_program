@@ -5,7 +5,6 @@ import com.wenba.common.util.TreeNodeUtil;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -29,6 +28,13 @@ public class MyApplication {
         return TreeNodeUtil.queryTreeData(id,wrapper());
     }
 
+    /**
+     * @author: tongrongbing
+     * @description: baozhuang
+     * @time: 2020/7/8 1:56 下午
+     * @param
+     * @return java.util.List<com.wenba.common.model.TreeNode>
+     */
     private  List<TreeNode> wrapper(){
         return Arrays.asList(
                 new TreeNode(1,"根结点",-1,1),
