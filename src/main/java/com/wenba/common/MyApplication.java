@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @description:
+ * @description: 项目启动类
  * @author: tongrongbing
  * @date: 2020-07-07 17:14
  **/
@@ -30,7 +30,7 @@ public class MyApplication {
 
     /**
      * @author: tongrongbing
-     * @description: baozhuang
+     * @description: 包装文件
      * @time: 2020/7/8 1:56 下午
      * @param
      * @return java.util.List<com.wenba.common.model.TreeNode>
