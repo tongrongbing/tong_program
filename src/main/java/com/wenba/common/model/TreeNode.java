@@ -13,14 +13,14 @@ public class TreeNode implements Serializable {
     private long id;
     private String name;
     private long parentId;
-    private Integer level;
+    private Integer seq;  //  各个子节点的排序顺序
     private List<TreeNode> children;
 
-    public TreeNode(long id, String name, long parentId, int level) {
+    public TreeNode(long id, String name, long parentId, int seq) {
         this.id = id;
         this.name = name;
         this.parentId = parentId;
-        this.level = level;
+        this.seq = seq;
     }
 
     public long getId() {
@@ -47,12 +47,12 @@ public class TreeNode implements Serializable {
         this.parentId = parentId;
     }
 
-    public Integer getLevel() {
-        return level;
+    public Integer getSeq() {
+        return seq;
     }
 
-    public void setLevel(Integer level) {
-        this.level = level;
+    public void setSeq(Integer seq) {
+        this.seq = seq;
     }
 
     public List<TreeNode> getChildren() {

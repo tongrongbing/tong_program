@@ -2,6 +2,12 @@ package com.wenba.common.util;
 
 import java.util.ArrayList;
 import java.util.List;
+/**
+ * @author: tongrongbing
+ * @description: 树工具类
+ * @time: 2020/7/8 2:02 下午
+ * @return
+ */
 public class TreeNoteUtils {
 
     /**

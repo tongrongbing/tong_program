@@ -27,7 +27,7 @@ public class TreeNodeUtil {
             }
         }
         // 对根节点进行降序
-        treeNodeList.sort(Comparator.comparing(TreeNode::getLevel).reversed());
+        treeNodeList.sort(Comparator.comparing(TreeNode::getSeq).reversed());
         return treeNodeList;
     }
 }
