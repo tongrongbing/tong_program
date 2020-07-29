@@ -40,6 +40,7 @@ public class ServerApplication {
      * @return java.util.List<com.wenba.common.model.TreeNode>
      */
     private  List<TreeNode> wrapper(){
+        System.out.println("========");
         return Arrays.asList(
                 new TreeNode(1,"根结点",-1,1),
                 new TreeNode(2,"结点1",1,2),
