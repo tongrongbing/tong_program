@@ -1,5 +1,6 @@
 package com.wenba.common.util;
 import com.wenba.common.model.TreeNode;
+import com.wenba.vo.SysDeptVO;
 
 import java.util.*;
 
@@ -28,6 +29,27 @@ public class TreeNodeUtil {
         }
         // 对根节点进行降序
         treeNodeList.sort(Comparator.comparing(TreeNode::getSeq).reversed());
+        return treeNodeList;
+    }
+
+    /**
+     * @author: tongrongbing
+     * @description:  根据指定部门ID，获取该部门下所有的部门
+     * @time: 2020/7/10 5:12 下午
+     * @param id
+     * @param nodeList
+     * @return java.util.List<com.wenba.vo.SysDeptVO>
+     */
+    public static List<SysDeptVO> getSysDeptTree(long id, List<SysDeptVO> nodeList){
+        List<SysDeptVO> treeNodeList = new ArrayList<SysDeptVO>();
+        for (SysDeptVO node: nodeList) {
+            if(id == node.getParentId()){
+                node.setChildrenList(getSysDeptTree(node.getId(),nodeList));
+                treeNodeList.add(node);
+            }
+        }
+        // 对根节点进行降序
+        treeNodeList.sort(Comparator.comparing(SysDeptVO::getOrderBy).reversed());
         return treeNodeList;
     }
 }
