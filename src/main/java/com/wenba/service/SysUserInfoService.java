@@ -8,5 +8,5 @@ package com.wenba.service;
 
 public interface SysUserInfoService {
 
-    public void delete(int id);
+    public void deleteUserById(int id);
 }

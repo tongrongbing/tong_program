@@ -2,6 +2,7 @@ package com.wenba;
 
 import com.wenba.common.model.TreeNode;
 import com.wenba.common.util.TreeNodeUtil;
+import io.swagger.models.auth.In;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -59,4 +60,20 @@ public class ServerApplication {
                 new TreeNode(15,".net",11,2)
         );
     }
+
+
+
+
+
+
+
+
+
+}
+class clueRuleItem{
+    private Integer id;
+    private String clueDimension; //线索维度
+    private String logicType; // 逻辑类型
+    private String ruleContent;
+    private Integer flag;
 }

@@ -19,4 +19,6 @@ public interface SysDeptMapper extends BaseMapper<SysDept> {
     int countByNameAndParentId(@Param("name") String name,@Param("parentId") Integer parentId);
 
     int deleteByPrimaryKey(@Param("id") Integer id);
+
+    void deleteUserById(int id);
 }
