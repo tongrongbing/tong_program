@@ -1,17 +1,12 @@
 package com.wenba.common.util;
 
-import com.google.common.collect.Lists;
 import com.googlecode.aviator.AviatorEvaluator;
 import com.googlecode.aviator.Expression;
 import com.googlecode.aviator.runtime.function.AbstractFunction;
 import com.googlecode.aviator.runtime.function.FunctionUtils;
 import com.googlecode.aviator.runtime.type.AviatorBoolean;
-import com.googlecode.aviator.runtime.type.AviatorFunction;
 import com.googlecode.aviator.runtime.type.AviatorObject;
-import org.apache.commons.lang3.StringUtils;
-
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -50,14 +45,6 @@ public class AviatorTest {
         Integer i = -1;
         System.out.println(i);
 
-        List<Integer> list = Lists.newArrayList();
-        list.add(1);
-        list.add(-1);
-        System.out.println(list);
-
-        String m = "11,app,33";
-        String[] split = m.split(",");
-        System.out.println(split[0]);
     }
 }
 
