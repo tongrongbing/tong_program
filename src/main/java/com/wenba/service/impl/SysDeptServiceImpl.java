@@ -9,6 +9,7 @@ import com.wenba.convert.DeptTreeConvertProcessor;
 import com.wenba.dto.SysDeptDTO;
 import com.wenba.exception.CustomizedException;
 import com.wenba.mapper.SysDeptMapper;
+import com.wenba.mapper.SysUserInfoMapper;
 import com.wenba.model.SysDept;
 import com.wenba.service.SysDeptService;
 import com.wenba.service.SysUserInfoService;
@@ -87,8 +88,13 @@ public class SysDeptServiceImpl implements SysDeptService {
         sysDept.setOperateIp("127.0.0.1");
         sysDept.setLevel(LevelUtil.calculateLevel(getLevel(sysDeptDTO.getParentId()),sysDeptDTO.getParentId()));
         sysDeptMapper.insert(sysDept);
-
-        userInfoService.delete(1);
+        int i = 90;
+        try {
+            userInfoService.deleteUserById(1);
+           // i = i / 0;
+        }catch (Exception e){
+            throw new RuntimeException("error");
+        }
     }
 
     private boolean checkExist(String name, Integer parentId) {

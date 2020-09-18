@@ -174,4 +174,11 @@
     FROM sys_dept
     WHERE parent_id = #{deptId}
   </select>
+<<<<<<< HEAD
+=======
+
+  <delete id="deleteUserById" parameterType="int">
+        delete from sys_user where id = #{id}
+  </delete>
+>>>>>>> e0e2548ec18b3734b80378c260c3b7e8b93c0ae9
 </mapper>

@@ -97,18 +97,32 @@
             <artifactId>swagger-bootstrap-ui</artifactId>
             <version>1.9.4</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.googlecode.aviator</groupId>
+            <artifactId>aviator</artifactId>
+            <version>4.2.0</version>
+        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.6</version>
         </dependency>
+<<<<<<< HEAD
         <!-- aviator表达式依赖 -->
         <dependency>
             <groupId>com.googlecode.aviator</groupId>
             <artifactId>aviator</artifactId>
             <version>4.2.0</version>
         </dependency>
+=======
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+
+>>>>>>> e0e2548ec18b3734b80378c260c3b7e8b93c0ae9
     </dependencies>
     <build>
         <plugins>
