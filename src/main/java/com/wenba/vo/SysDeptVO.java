@@ -24,6 +24,8 @@ public class SysDeptVO implements Serializable {
 
     private Integer orderBy;
 
+    private List<SysDeptVO> childrenList = Lists.newArrayList();
+
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
     private Date operateTime;
 
@@ -79,8 +81,6 @@ public class SysDeptVO implements Serializable {
     public void setOperateTime(Date operateTime) {
         this.operateTime = operateTime;
     }
-
-    private List<SysDeptVO> childrenList = Lists.newArrayList();
 
     public List<SysDeptVO> getChildrenList() {
         return childrenList;
