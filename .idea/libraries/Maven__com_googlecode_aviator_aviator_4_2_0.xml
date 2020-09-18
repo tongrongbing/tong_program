@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.googlecode.aviator:aviator:4.2.0">
+    <CLASSES>
+      <root url="jar:///Library/Java/Extensions/mvnrepository/com/googlecode/aviator/aviator/4.2.0/aviator-4.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar:///Library/Java/Extensions/mvnrepository/com/googlecode/aviator/aviator/4.2.0/aviator-4.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar:///Library/Java/Extensions/mvnrepository/com/googlecode/aviator/aviator/4.2.0/aviator-4.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
